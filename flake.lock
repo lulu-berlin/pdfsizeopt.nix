@@ -1,0 +1,94 @@
+{
+  "nodes": {
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs-lib"
+        ]
+      },
+      "locked": {
+        "lastModified": 1778716662,
+        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1778869304,
+        "narHash": "sha256-30sZNZoA1cqF5JNO9fVX+wgiQYjB7HJqqJ4ztCDeBZE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d233902339c02a9c334e7e593de68855ad26c4cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1778869304,
+        "narHash": "sha256-30sZNZoA1cqF5JNO9fVX+wgiQYjB7HJqqJ4ztCDeBZE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d233902339c02a9c334e7e593de68855ad26c4cb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pdfsizeopt_libexec": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1681837328,
+        "narHash": "sha256-R3KaNST9aXki0TsR/1iXNiA5Qh3WZRYgwdH3fSN8x0A=",
+        "type": "tarball",
+        "url": "https://github.com/pts/pdfsizeopt/releases/download/2023-04-18/pdfsizeopt_libexec_linux-v9.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/pts/pdfsizeopt/releases/download/2023-04-18/pdfsizeopt_libexec_linux-v9.tar.gz"
+      }
+    },
+    "pdfsizeopt_single": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-tISvuz1vWhveIO5Ay5BMzdECqh8n85cgl771sXIZ9r0=",
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/pts/pdfsizeopt/master/pdfsizeopt.single"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/pts/pdfsizeopt/master/pdfsizeopt.single"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-lib": "nixpkgs-lib",
+        "pdfsizeopt_libexec": "pdfsizeopt_libexec",
+        "pdfsizeopt_single": "pdfsizeopt_single"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
